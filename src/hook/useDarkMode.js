@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 
 function useDarkMode({isDarkMode}) {
   console.log(isDarkMode);
-
   useEffect(() => {
     const root = window.document.documentElement;
     if (isDarkMode){
