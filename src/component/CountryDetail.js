@@ -53,7 +53,7 @@ function CountryDetail() {
   return (
     <div className='w-full h-[100vh] dark:bg-slate-800 dark:text-slate-200'>
       <div className='px-[20px] sm:px-[50px] py-5 dark:bg-slate-800 dark:text-slate-200  dark:border-indigo-600'>
-        <Link to='/'> <button style={{boxShadow:'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}} className='flex justify-center items-center gap-2 px-5 py-1 dark:bg-slate-600 rounded-md'><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" className="bi bi-arrow-left" viewBox="0 0 16 16">
+        <Link to='/countries'> <button style={{boxShadow:'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px'}} className='flex justify-center items-center gap-2 px-5 py-1 dark:bg-slate-600 rounded-md'><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" className="bi bi-arrow-left" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
         </svg>Back</button></Link>
       </div>

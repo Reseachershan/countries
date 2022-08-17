@@ -26,6 +26,7 @@ function CountryRoutes() {
     <Navbar handleTheme={handleTheme} isDarkMode={isDarkMode}/>
     <Routes>
       <Route path="/countries" element={<Countries />} />
+      <Route path="/" element={<Countries />} />
       <Route path="/country/:name" element={<CountryDetail  />} />
     </Routes>
     </>

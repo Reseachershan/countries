@@ -9,6 +9,11 @@ function Countries() {
   const [IscountriesLoading, setIsCountriesLoading] = useState(true)
   const [searchValue, setSearchValue] = useState('');
   const [filterRegion, setFilterRegion] = useState('')
+  const [timer, setTimer] = useState(90)
+  useEffect(()=>{
+    setTimeout(() => setTimer(timer+90), 1000)
+  },[timer])
+  console.log(timer);
   const API = 'https://restcountries.com/v3.1/all';
 
   useEffect(() => {
@@ -65,7 +70,7 @@ function Countries() {
   return (
     <>
       <NavList handleSearch={handleSearch} handleFilterRegion={handleFilterRegion} />
-      <div className='dark:bg-slate-800 dark:text-gray-600 min-h-[69vh] grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 px-[20px] sm:px-[50px] mb-10 md:pt-0 pt-[40px]'>
+       <div className='dark:bg-slate-800 dark:text-gray-600 min-h-[69vh] grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-10 px-[20px] sm:px-[50px] mb-10 md:pt-0 pt-[40px]'>
         {regionWithSearch?.map((countries) => {
           return (
             <div style={{ boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px' }} className='rounded-md mb-5 w-full'>
